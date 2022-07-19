@@ -21,6 +21,7 @@ public class Screenshot {
 		driver.get("https://www.tirumala.org");
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(source,new File("./Screenshot/ttd.png"));
+		System.out.prinln("File source");
 		
 	}
 
